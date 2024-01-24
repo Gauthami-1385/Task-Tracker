@@ -27,7 +27,7 @@ function TaskController({ data, start, setStart }) {
     return () => {
       clearInterval(intervalId);
     };
-  }, [start]);
+  }, [start, sum]);
 
   return (
     <div className="controller-container">
