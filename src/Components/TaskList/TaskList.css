@@ -1,0 +1,48 @@
+.tasklist-container {
+  margin: 30px;
+  background-color: white;
+  border-radius: 20px;
+  border: 2px solid #5799ae;
+  width: 50%;
+  height: auto;
+  font-size: 20px;
+}
+
+.list-container {
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow-y: scroll;
+  margin-bottom: 1em;
+}
+
+.listcontent {
+  margin-top: 1em;
+  width: 80%;
+  height: auto;
+  border: 2px solid #5799ae;
+  border-radius: 20px;
+}
+.start {
+  width: 100%;
+  height: 70px;
+  border-radius: 10px;
+  position: relative;
+  bottom: 0;
+  box-shadow: 0px -3px 10px #5b92a461;
+}
+.startbutton {
+  border: none;
+  padding-left: 2em;
+  padding-right: 2em;
+  height: 3em;
+  background-color: white;
+  border-radius: 20px;
+  margin: 2% 0 2% 0;
+  box-shadow: 1px 2px 5px #5799ae;
+}
+.startbutton:hover {
+  transform: translateY(-3);
+  box-shadow: 1px 5px 10px #4c8da1;
+}

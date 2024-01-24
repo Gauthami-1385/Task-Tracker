@@ -1,0 +1,9 @@
+.controller-container {
+  margin: 40px;
+  background-color: white;
+  border-radius: 20px;
+  border: 2px solid #5799ae;
+  width: 90%;
+  height: 25%;
+  font-size: 20px;
+}
