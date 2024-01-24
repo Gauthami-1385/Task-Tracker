@@ -1,0 +1,12 @@
+.progress-circle {
+  border: 2px solid green;
+  border-radius: 100%;
+  width: 40px;
+  height: 40px;
+  margin-left: -8px;
+  margin-right: -8px;
+  background-color: white;
+  z-index: 12;
+  position: absolute;
+  top:-25%
+}

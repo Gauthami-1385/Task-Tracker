@@ -1,9 +1,10 @@
 import React, { useState } from "react";
 import "./AddTask.css";
-function AddTask() {
+function AddTask(props) {
   const initialValue = { taskName: "", seconds: "" };
   const [entry, setEntry] = useState(initialValue);
-  const [list, setList] = useState([]);
+  let list=props.data
+  let setList=props.setList
   const handleChange = (e) => {
     let { name, value } = e.target;
     setEntry({ ...entry, [name]: value });
@@ -11,6 +12,7 @@ function AddTask() {
   const handleAdd = () => {
     setList([...list, entry]);
     setEntry(initialValue);
+    
   };
   return (
     <div className="addTask-container">
