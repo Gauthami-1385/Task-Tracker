@@ -1,13 +1,28 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik&display=swap");
+
 .App {
-  background-color: rgb(165, 219, 201);
+  /* background-color: rgb(165, 219, 201); */
   text-align: center;
   height: 100vh;
-  margin-top: 0
+  margin-top: 0;
+  font-family: "Rubik", sans-serif;
 }
-
+.appheading {
+  margin-top: 25px;
+  padding: 0;
+  font-size: 50px;
+}
 .functionality {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
   align-items: center;
+}
+@media screen and (max-width: 480px) {
+  .appheading {
+    font-size: 25px;
+  }
+  .functionality{
+    flex-direction: column;
+  }
 }

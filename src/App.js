@@ -14,15 +14,15 @@ function App() {
   const startTimer = () => {
     setStart(true);
   };
-  const clearList=()=>{
-    setList([])
-  }
+  const clearList = () => {
+    setList([]);
+  };
   return (
     <div className="App">
-      <h1 style={{ margin: "0", padding: "0" }}>Task-Tracker</h1>
+      <h1 className="appheading">TASK-TRACKER</h1>
       <div className="functionality">
         <AddTask data={list} setList={setList} />
-        <TaskList data={list} startTimer={startTimer} clearList={clearList}/>
+        <TaskList data={list} startTimer={startTimer} clearList={clearList} />
       </div>
       <TaskController data={list} start={start} setStart={setStart} />
     </div>
@@ -30,3 +30,8 @@ function App() {
 }
 
 export default App;
+/* 
+sum include 
+media query----------------done
+reset button
+clear position change */

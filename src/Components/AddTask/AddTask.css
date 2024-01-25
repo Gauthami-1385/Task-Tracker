@@ -52,3 +52,16 @@ input:focus {
   transform: translateY(-3);
   box-shadow: 1px 5px 10px #4c8da1;
 }
+@media screen and (max-width: 480px) {
+  .addTask-container {
+    font-size: 15px;
+    width: 70%;
+  }
+  .inputs input {
+    height: 2em;
+  }
+  .AddButton {
+    padding-left: 1em;
+    padding-right: 1em;
+  }
+}

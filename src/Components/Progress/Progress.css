@@ -8,5 +8,12 @@
   background-color: white;
   z-index: 12;
   position: absolute;
-  top:-25%
+  top: -25%;
+}
+@media screen and (max-width: 480px) {
+  .progress-circle {
+    width: 25px;
+    height: 25px;
+    top: 12%;
+  }
 }

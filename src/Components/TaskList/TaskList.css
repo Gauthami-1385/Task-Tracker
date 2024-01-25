@@ -34,6 +34,7 @@
 }
 .startbutton {
   border: none;
+  margin: 2em;
   padding-left: 2em;
   padding-right: 2em;
   height: 3em;
@@ -45,4 +46,23 @@
 .startbutton:hover {
   transform: translateY(-3);
   box-shadow: 1px 5px 10px #4c8da1;
+}
+
+@media screen and (max-width: 480px) {
+  .tasklist-container {
+    width: 70%;
+  }
+  .list-container {
+    height: 200px;
+  }
+  .startbutton {
+    padding-left: 1em;
+    padding-right: 1em;
+    margin: 1em;
+  }
+  .listcontent {
+    text-align: center;
+    height: 20%;
+    margin-top: 0.5em;
+  }
 }

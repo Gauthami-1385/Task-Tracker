@@ -9,7 +9,7 @@ function ViewTask({ currentTime, accumulator, name, time, sum }) {
   }, [currentTime, accumulator]);
   return (
     <div
-      style={{ left: `${(accumulator / sum) * 100}%` }}
+      style={{ left: `${((accumulator / sum) * 100)-2}%` }}
       className="progress-circle"
     >
       <audio src="beep.mp3" ref={ref} ></audio>
