@@ -39,9 +39,9 @@ function TaskController({ list, start, startTimer, setStart }) {
         <button
           className="startbutton"
           onClick={startTimer}
-          disabled={time != 0}
+          disabled={time !== 0}
         >
-         {time==0? <FontAwesomeIcon icon={faPlay} />:<FontAwesomeIcon icon={faPause} />}
+         {time===0? <FontAwesomeIcon icon={faPlay} />:<FontAwesomeIcon icon={faPause} />}
         </button>
         <progress className="progress-line " value={time} max={sum} />
         {list.map((data, i) => {
