@@ -1,6 +1,6 @@
 import React from "react";
 import "./TaskList.css";
-function TaskList({ data, startTimer,clearList}) {
+function TaskList({ data,clearList}) {
   const display = () => {
     return data.map((data, i) => {
       return (
@@ -17,10 +17,7 @@ function TaskList({ data, startTimer,clearList}) {
       <h1>TASK LIST</h1>
       <div className="list-container">{display()}</div>
       <div className="start">
-        <button className="startbutton" onClick={startTimer}>
-          Start
-        </button>
-        <button className="startbutton" onClick={clearList}>
+        <button className="clearbutton" onClick={clearList}>
           Clear
         </button>
       </div>

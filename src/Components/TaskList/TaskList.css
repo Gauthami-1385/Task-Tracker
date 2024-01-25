@@ -32,7 +32,7 @@
   bottom: 0;
   box-shadow: 0px -3px 10px #5b92a461;
 }
-.startbutton {
+.clearbutton {
   border: none;
   margin: 2em;
   padding-left: 2em;
@@ -43,7 +43,7 @@
   margin: 2% 0 2% 0;
   box-shadow: 1px 2px 5px #5799ae;
 }
-.startbutton:hover {
+.clearbutton:hover {
   transform: translateY(-3);
   box-shadow: 1px 5px 10px #4c8da1;
 }
@@ -55,7 +55,7 @@
   .list-container {
     height: 200px;
   }
-  .startbutton {
+  .clearbutton {
     padding-left: 1em;
     padding-right: 1em;
     margin: 1em;

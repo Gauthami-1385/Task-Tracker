@@ -1,18 +1,31 @@
-import React, { useEffect ,useRef} from "react";
+import React, { useEffect, useRef } from "react";
 import "./Progress.css";
-function ViewTask({ currentTime, accumulator, name, time, sum }) {
-  const ref=useRef(null)
+function ViewTask({
+  currentTime,
+  accumulator,
+  setStart,
+  time,
+  sum,
+  lastCircle,
+  resetTime,
+}) {
+  const ref = useRef(null);
+  console.log(lastCircle);
   useEffect(() => {
     if (currentTime === accumulator) {
-     ref.current.play()
+      ref.current.play();
+      if (lastCircle) {
+        resetTime();
+        setStart(false);
+      }
     }
-  }, [currentTime, accumulator]);
+  }, [currentTime, accumulator, lastCircle, setStart, resetTime]);
   return (
     <div
-      style={{ left: `${((accumulator / sum) * 100)-2}%` }}
+      style={{ left: `${(accumulator / sum) * 100 - 2}%` }}
       className="progress-circle"
     >
-      <audio src="beep.mp3" ref={ref} ></audio>
+      <audio src="alert.mp3" ref={ref}></audio>
       {time}
     </div>
   );

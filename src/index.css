@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik&display=swap");
+
 body {
   background-color: rgb(165, 219, 201);
   margin: 20px;
@@ -17,6 +19,10 @@ code {
 }
 .width-100 {
   width: 100%;
+}
+button{
+  font-family: "Rubik", sans-serif;
+  font-size: 15px;
 }
 @media screen and (max-width:480px){
   h1{

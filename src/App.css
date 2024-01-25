@@ -3,7 +3,7 @@
 .App {
   /* background-color: rgb(165, 219, 201); */
   text-align: center;
-  height: 100vh;
+  height: 100%;
   margin-top: 0;
   font-family: "Rubik", sans-serif;
 }
@@ -22,7 +22,7 @@
   .appheading {
     font-size: 25px;
   }
-  .functionality{
+  .functionality {
     flex-direction: column;
   }
 }

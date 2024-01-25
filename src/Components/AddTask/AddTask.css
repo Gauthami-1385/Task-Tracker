@@ -58,7 +58,7 @@ input:focus {
     width: 70%;
   }
   .inputs input {
-    height: 2em;
+    height: 2.1em;width: 82%;
   }
   .AddButton {
     padding-left: 1em;

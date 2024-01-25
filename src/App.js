@@ -5,6 +5,7 @@ import TaskController from "./Components/TaskController/TaskController";
 import { useEffect, useState } from "react";
 function App() {
   const [start, setStart] = useState(false);
+
   const [list, setList] = useState(() => {
     return JSON.parse(localStorage.getItem("task")) || [];
   });
@@ -22,9 +23,14 @@ function App() {
       <h1 className="appheading">TASK-TRACKER</h1>
       <div className="functionality">
         <AddTask data={list} setList={setList} />
-        <TaskList data={list} startTimer={startTimer} clearList={clearList} />
+        <TaskList data={list} clearList={clearList} />
       </div>
-      <TaskController data={list} start={start} setStart={setStart} />
+      <TaskController
+        list={list}
+        startTimer={startTimer}
+        start={start}
+        setStart={setStart}
+      />
     </div>
   );
 }
